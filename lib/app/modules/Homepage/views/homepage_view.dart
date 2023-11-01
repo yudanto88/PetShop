@@ -24,7 +24,7 @@ class HomepageView extends GetView<HomepageController> {
           color: orangeColor,
         ),
         title: Text(
-          'Malang3',
+          'Malang',
           style: blackTextStyle2.copyWith(fontSize: 20),
         ),
         actions: [
