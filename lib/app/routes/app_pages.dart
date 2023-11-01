@@ -18,8 +18,8 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HOME;
-  // static const INITIAL = Routes.HEWAN;
+  // static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.HEWAN;
 
   static final routes = [
     GetPage(
@@ -49,7 +49,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.ABOUT,
-      page: () =>AboutView(),
+      page: () => AboutView(),
       binding: AboutBinding(),
     ),
   ];

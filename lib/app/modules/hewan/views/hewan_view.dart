@@ -42,14 +42,43 @@ class HewanView extends StatelessWidget {
           return Column(
             children: [
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(10),
                 child: Container(
                   width: double.infinity,
                   height: 300,
                   decoration: BoxDecoration(
-                      color: Color(0xffffc482),
-                      boxShadow: [BoxShadow(color: Colors.grey)]),
-                  child: Text('$fakta'),
+                      image: DecorationImage(
+                          image: AssetImage("assets/backgroundinpo.jpg"),
+                          fit: BoxFit.fill),
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            offset: Offset(5, 5),
+                            blurRadius: 10)
+                      ]),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20),
+                        child: Text('$fakta', style: blackTextStyle2),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  factsController.fetchFacts();
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xffffc482),
+                ),
+                child: Text(
+                  'Refresh',
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ],
