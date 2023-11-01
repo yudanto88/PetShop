@@ -9,7 +9,7 @@ class ProfileView extends GetView<ProfileController> {
   const ProfileView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    var Menu = ListTile(
+    var MenuSetting = ListTile(
       leading: Container(
         width: 40,
         height: 40,
@@ -36,6 +36,35 @@ class ProfileView extends GetView<ProfileController> {
         child: Icon(Icons.arrow_downward),
       ),
     );
+    var MenuInfo = ListTile(
+        leading: Container(
+          width: 40,
+          height: 40,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(100),
+            color: greyColor2,
+          ),
+          child: Icon(
+            Icons.info,
+            color: orangeColor,
+          ),
+        ),
+        title: Text(
+          'About us',
+          style: blackTextStyle.copyWith(fontSize: 14),
+        ),
+        trailing: Container(
+          width: 30,
+          height: 30,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(100),
+            color: greyColor2,
+          ),
+          child: Icon(Icons.arrow_downward),
+        ),
+        onTap: () {
+          Get.toNamed(Routes.ABOUT);
+        });
 
     return Scaffold(
         appBar: AppBar(
@@ -99,11 +128,15 @@ class ProfileView extends GetView<ProfileController> {
                       'Ambil gambar',
                       style: blackTextStyle.copyWith(fontSize: 12),
                     )),
-                Menu,
+                MenuSetting,
                 SizedBox(
                   height: 10,
                 ),
-                Menu,
+                MenuInfo,
+                SizedBox(
+                  height: 10,
+                ),
+                MenuSetting,
                 SizedBox(
                   height: 10,
                 ),
