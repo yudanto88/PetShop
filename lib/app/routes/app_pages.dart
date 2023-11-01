@@ -42,7 +42,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.HEWAN,
-      page: () => const HewanView(),
+      page: () => HewanView(),
       binding: HewanBinding(),
     ),
   ];

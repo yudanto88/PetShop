@@ -1,6 +1,6 @@
-import '../../api/petstore_service.dart';
+import '../../api/petshop_api/petstore_service.dart';
 import 'package:get/get.dart';
-import '../../api/pet_model.dart';
+import '../../api/petshop_api/pet_model.dart';
 
 class PetController extends GetxController {
   final PetstoreService _petstoreService = PetstoreService();
