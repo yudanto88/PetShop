@@ -7,6 +7,7 @@ abstract class Routes {
   static const WELCOME = _Paths.WELCOME;
   static const PROFILE = _Paths.PROFILE;
   static const HOMEPAGE = _Paths.HOMEPAGE;
+  static const HEWAN = _Paths.HEWAN;
 }
 
 abstract class _Paths {
@@ -15,6 +16,7 @@ abstract class _Paths {
   static const WELCOME = '/welcome';
   static const PROFILE = '/profile';
   static const HOMEPAGE = '/homepage';
+  static const HEWAN = '/hewan';
 }
 
 final getPages = [

@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import '../modules/Homepage/bindings/homepage_binding.dart';
 import '../modules/Homepage/views/homepage_view.dart';
+import '../modules/hewan/bindings/hewan_binding.dart';
+import '../modules/hewan/views/hewan_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
@@ -14,7 +16,8 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HOME;
+  // static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.HEWAN;
 
   static final routes = [
     GetPage(
@@ -36,6 +39,11 @@ class AppPages {
       name: _Paths.HOMEPAGE,
       page: () => const HomepageView(),
       binding: HomepageBinding(),
+    ),
+    GetPage(
+      name: _Paths.HEWAN,
+      page: () => const HewanView(),
+      binding: HewanBinding(),
     ),
   ];
 }
