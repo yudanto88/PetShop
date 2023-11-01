@@ -18,7 +18,7 @@ class HewanView extends GetView<PetController> {
           if (controller.pets.isEmpty) {
             return Center(
               child:
-                  CircularProgressIndicator(), // Tampilkan indikator pemuatan jika daftar masih kosong.
+                  CircularProgressIndicator(),
             );
           } else {
             return ListView.builder(
