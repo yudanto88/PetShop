@@ -32,7 +32,7 @@ class HomepageView extends GetView<HomepageController> {
             margin: const EdgeInsets.only(right: 16),
             child: Icon(
               Icons.notifications,
-              color: Color(0xfff8b8c89),
+              color: Color(0xffffc482),
             ),
           )
         ],
@@ -119,8 +119,11 @@ class HomepageView extends GetView<HomepageController> {
               text: 'Chat',
             ),
             GButton(
-              icon: Icons.thumb_up,
-              text: 'Like',
+              icon: Icons.view_timeline,
+              onPressed: () {
+                Get.toNamed(Routes.HEWAN);
+              },
+              text: 'Timeline',
             ),
             GButton(
               icon: Icons.account_circle_rounded,

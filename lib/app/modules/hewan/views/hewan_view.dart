@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pet/app/routes/app_pages.dart';
 import '../controllers/hewan_controller.dart';
 import '../../../controllers/pet_controller.dart';
 import '../../../../api/meowfacts_api/facts_controller.dart';
+import 'package:pet/style.dart';
+import '';
 
 class HewanView extends StatelessWidget {
   final FactsController factsController = Get.put(FactsController());
@@ -10,8 +13,27 @@ class HewanView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HewanView'),
-        centerTitle: true,
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          onPressed: () {
+            Get.toNamed(Routes.HOMEPAGE);
+          },
+          icon: const Icon(Icons.arrow_back),
+          color: orangeColor,
+        ),
+        title: Text(
+          'Cat Facts',
+          style: blackTextStyle2.copyWith(fontSize: 20),
+        ),
+        actions: [
+          Container(
+            margin: const EdgeInsets.only(right: 16),
+            child: Icon(
+              Icons.notifications,
+              color: Color(0xffffc482),
+            ),
+          )
+        ],
       ),
       body: Obx(() {
         if (factsController.facts.isNotEmpty) {
@@ -19,7 +41,17 @@ class HewanView extends StatelessWidget {
           final fakta = data.data.first;
           return Column(
             children: [
-              Text('$fakta'),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: double.infinity,
+                  height: 300,
+                  decoration: BoxDecoration(
+                      color: Color(0xffffc482),
+                      boxShadow: [BoxShadow(color: Colors.grey)]),
+                  child: Text('$fakta'),
+                ),
+              ),
             ],
           );
         } else {

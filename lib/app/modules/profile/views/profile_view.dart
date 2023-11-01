@@ -62,7 +62,7 @@ class ProfileView extends GetView<ProfileController> {
           ),
           child: Icon(Icons.arrow_downward),
         ),
-onTap: () {
+        onTap: () {
           Get.toNamed(Routes.ABOUT);
         });
 
@@ -140,7 +140,7 @@ onTap: () {
                 SizedBox(
                   height: 10,
                 ),
-                MenuInfo,
+                Menu,
                 SizedBox(
                   height: 10,
                 ),
