@@ -45,12 +45,12 @@ class ProfileView extends GetView<ProfileController> {
             color: greyColor2,
           ),
           child: Icon(
-            Icons.info,
+            Icons.map,
             color: orangeColor,
           ),
         ),
         title: Text(
-          'About us',
+          'Our Location',
           style: blackTextStyle.copyWith(fontSize: 14),
         ),
         trailing: Container(
