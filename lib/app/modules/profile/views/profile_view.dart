@@ -111,10 +111,6 @@ class ProfileView extends GetView<ProfileController> {
                 SizedBox(
                   height: 10,
                 ),
-                Menu,
-                SizedBox(
-                  height: 10,
-                ),
               ],
             ),
           );
