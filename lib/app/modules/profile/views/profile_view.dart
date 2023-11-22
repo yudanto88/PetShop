@@ -4,9 +4,11 @@ import 'package:pet/app/routes/app_pages.dart';
 import '../controllers/profile_controller.dart';
 import '../../../../style.dart';
 import 'dart:io';
+import '../../auth/controllers/auth_controller.dart';
 
 class ProfileView extends GetView<ProfileController> {
-  const ProfileView({Key? key}) : super(key: key);
+  final AuthController _authController = Get.put(AuthController());
+  ProfileView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     var MenuSetting = ListTile(
@@ -144,6 +146,21 @@ class ProfileView extends GetView<ProfileController> {
                 SizedBox(
                   height: 10,
                 ),
+                Obx(() {
+                  return ElevatedButton(
+                    onPressed: () {
+                      _authController.logout();
+                    },
+                    style: ElevatedButton.styleFrom(
+                        primary: orangeColor,
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                        fixedSize: Size(150, 50)),
+                    child: _authController.isLoading.value
+                        ? CircularProgressIndicator()
+                        : Text('Logout'),
+                  );
+                }),
               ],
             ),
           );

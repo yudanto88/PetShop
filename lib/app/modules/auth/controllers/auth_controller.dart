@@ -45,4 +45,16 @@ class AuthController extends GetxController {
       isLoading.value = false;
     }
   }
+
+  Future<void> logout() async {
+    try {
+      await _auth.signOut();
+      Get.snackbar('Success', 'Logout successful',
+          backgroundColor: Colors.green);
+      Get.toNamed(Routes.HOME);
+    } catch (error) {
+      Get.snackbar('Error', 'Logout failed: $error',
+          backgroundColor: Colors.red);
+    }
+  }
 }
