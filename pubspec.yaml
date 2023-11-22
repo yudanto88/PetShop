@@ -18,7 +18,13 @@ dependencies:
   image_picker: ^1.0.4
   google_nav_bar: ^5.0.6
   webview_flutter: ^4.2.2
+<<<<<<< HEAD
   firebase_core: ^2.15.1
+=======
+  firebase_auth: ^4.7.3
+  firebase_core: ^2.15.1
+  firebase_messaging: ^14.6.6
+>>>>>>> 8516e4564029df97f3fb80608495bc33fa1b5c44
   dio: ^4.0.6
   flutter:
     sdk: flutter

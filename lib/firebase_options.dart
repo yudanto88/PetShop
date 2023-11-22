@@ -44,6 +44,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
+<<<<<<< HEAD
     apiKey: 'AIzaSyDmbZullI37j7XMxERv1bkUYqDyp_d7XWs',
     appId: '1:321267110664:web:7bd48279e7d72d784092bd',
     messagingSenderId: '321267110664',
@@ -67,15 +68,48 @@ class DefaultFirebaseOptions {
     messagingSenderId: '321267110664',
     projectId: 'test-11733',
     storageBucket: 'test-11733.appspot.com',
+=======
+    apiKey: 'AIzaSyCPnpsDwPuIDMMyW5C18-e6hbizco2Qxfc',
+    appId: '1:121174944945:web:d31bc20f80d8463e11c690',
+    messagingSenderId: '121174944945',
+    projectId: 'petshop-754cb',
+    authDomain: 'petshop-754cb.firebaseapp.com',
+    storageBucket: 'petshop-754cb.appspot.com',
+    measurementId: 'G-CQW3Y48RZY',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyCZt4kdImcXZVLBu2Og2MzijMHi4mCj92o',
+    appId: '1:121174944945:android:ff14c554424b8ecb11c690',
+    messagingSenderId: '121174944945',
+    projectId: 'petshop-754cb',
+    storageBucket: 'petshop-754cb.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyD8tbjRBflMBa_Uq11RC6b_9QMEaEkg6Z8',
+    appId: '1:121174944945:ios:a9cfc0efbb42483211c690',
+    messagingSenderId: '121174944945',
+    projectId: 'petshop-754cb',
+    storageBucket: 'petshop-754cb.appspot.com',
+>>>>>>> 8516e4564029df97f3fb80608495bc33fa1b5c44
     iosBundleId: 'com.prak.pet',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
+<<<<<<< HEAD
     apiKey: 'AIzaSyCtEvE9DyzaHCx6znlezfzsW4SxhTh0HP0',
     appId: '1:321267110664:ios:6bd42bf4418b1bc54092bd',
     messagingSenderId: '321267110664',
     projectId: 'test-11733',
     storageBucket: 'test-11733.appspot.com',
+=======
+    apiKey: 'AIzaSyD8tbjRBflMBa_Uq11RC6b_9QMEaEkg6Z8',
+    appId: '1:121174944945:ios:239aecb57d18149f11c690',
+    messagingSenderId: '121174944945',
+    projectId: 'petshop-754cb',
+    storageBucket: 'petshop-754cb.appspot.com',
+>>>>>>> 8516e4564029df97f3fb80608495bc33fa1b5c44
     iosBundleId: 'com.prak.pet.RunnerTests',
   );
 }

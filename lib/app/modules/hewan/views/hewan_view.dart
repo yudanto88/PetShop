@@ -5,7 +5,6 @@ import '../controllers/hewan_controller.dart';
 import '../../../controllers/pet_controller.dart';
 import '../../../../api/meowfacts_api/facts_controller.dart';
 import 'package:pet/style.dart';
-import '';
 
 class HewanView extends StatelessWidget {
   final FactsController factsController = Get.put(FactsController());

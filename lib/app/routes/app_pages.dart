@@ -1,9 +1,12 @@
 import 'package:get/get.dart';
-
+import 'package:pet/app/modules/auth/views/login_page.dart';
+import 'package:pet/app/modules/auth/views/register_page.dart';
 import '../modules/Homepage/bindings/homepage_binding.dart';
 import '../modules/Homepage/views/homepage_view.dart';
 import '../modules/about/bindings/about_binding.dart';
 import '../modules/about/views/about_view.dart';
+import '../modules/auth/bindings/auth_binding.dart';
+import '../modules/auth/views/auth_view.dart';
 import '../modules/hewan/bindings/hewan_binding.dart';
 import '../modules/hewan/views/hewan_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -51,6 +54,21 @@ class AppPages {
       name: _Paths.ABOUT,
       page: () => AboutView(),
       binding: AboutBinding(),
+    ),
+    GetPage(
+      name: _Paths.AUTH,
+      page: () => const AuthView(),
+      binding: AuthBinding(),
+    ),
+    GetPage(
+      name: _Paths.LOGIN,
+      page: () => LoginPage(),
+      binding: AuthBinding(),
+    ),
+    GetPage(
+      name: _Paths.REGISTER,
+      page: () => RegisterPage(),
+      binding: AuthBinding(),
     ),
   ];
 }
