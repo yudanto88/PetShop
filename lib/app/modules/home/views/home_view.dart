@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:pet/app/routes/app_pages.dart';
 import '../../../../style.dart';
 import '../controllers/home_controller.dart';
+import '';
 
 class HomeView extends GetView<HomeController> {
   const HomeView({Key? key}) : super(key: key);
@@ -46,13 +47,13 @@ class HomeView extends GetView<HomeController> {
                     height: 50,
                     child: ElevatedButton(
                       onPressed: () {
-                        Get.toNamed(Routes.HOMEPAGE);
+                        Get.toNamed(Routes.LOGIN);
                       },
                       style: ElevatedButton.styleFrom(
                         primary: orangeColor,
                       ),
                       child: Text(
-                        'Get Started',
+                        'Login',
                         style: whiteTextStyle.copyWith(
                             fontSize: 16, backgroundColor: orangeColor),
                       ),

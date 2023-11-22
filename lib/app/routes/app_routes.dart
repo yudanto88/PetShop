@@ -9,6 +9,9 @@ abstract class Routes {
   static const HOMEPAGE = _Paths.HOMEPAGE;
   static const HEWAN = _Paths.HEWAN;
   static const ABOUT = _Paths.ABOUT;
+  static const AUTH = _Paths.AUTH;
+  static const LOGIN = _Paths.LOGIN;
+  static const REGISTER = _Paths.REGISTER;
 }
 
 abstract class _Paths {
@@ -19,6 +22,9 @@ abstract class _Paths {
   static const HOMEPAGE = '/homepage';
   static const HEWAN = '/hewan';
   static const ABOUT = '/about';
+  static const AUTH = '/auth';
+  static const LOGIN = '/login';
+  static const REGISTER = '/Register';
 }
 
 final getPages = [
