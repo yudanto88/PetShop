@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:pet/style.dart';
 import 'package:flutter/material.dart';
 import '../controllers/auth_controller.dart';
+import 'package:pet/app/routes/app_pages.dart';
 
 class RegisterPage extends StatefulWidget {
   @override
@@ -26,7 +27,18 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Register'),
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          onPressed: () {
+            Get.toNamed(Routes.LOGIN);
+          },
+          icon: const Icon(Icons.arrow_back),
+          color: orangeColor,
+        ),
+        title: Text(
+          'Register',
+          style: blackTextStyle2.copyWith(fontSize: 20),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -54,6 +66,10 @@ class _RegisterPageState extends State<RegisterPage> {
                           _passwordController.text,
                         );
                       },
+                style: ElevatedButton.styleFrom(
+                    primary: orangeColor,
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                    fixedSize: Size(150, 50)),
                 child: _authController.isLoading.value
                     ? CircularProgressIndicator()
                     : Text('Register'),

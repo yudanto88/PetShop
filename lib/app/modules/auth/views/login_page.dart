@@ -66,11 +66,16 @@ class _LoginPageState extends State<LoginPage> {
                           _passwordController.text,
                         );
                       },
+                style: ElevatedButton.styleFrom(
+                    primary: orangeColor,
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                    fixedSize: Size(150, 50)),
                 child: _authController.isLoading.value
                     ? CircularProgressIndicator()
                     : Text('Login'),
               );
             }),
+            SizedBox(height: 10),
             Container(
               width: 150,
               height: 50,

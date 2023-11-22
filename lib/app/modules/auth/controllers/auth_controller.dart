@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:pet/style.dart';
 import 'package:flutter/material.dart';
 import '../views/login_page.dart';
+import 'package:pet/app/routes/app_pages.dart';
 
 class AuthController extends GetxController {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -36,6 +37,7 @@ class AuthController extends GetxController {
       );
       Get.snackbar('Success', 'Login successful',
           backgroundColor: Colors.green);
+      Get.toNamed(Routes.HOMEPAGE);
     } catch (error) {
       Get.snackbar('Error', 'Login failed: $error',
           backgroundColor: Colors.red);
