@@ -1,13 +1,23 @@
 {
   "project_info": {
+<<<<<<< HEAD
+    "project_number": "321267110664",
+    "project_id": "test-11733",
+    "storage_bucket": "test-11733.appspot.com"
+=======
     "project_number": "121174944945",
     "project_id": "petshop-754cb",
     "storage_bucket": "petshop-754cb.appspot.com"
+>>>>>>> 8516e4564029df97f3fb80608495bc33fa1b5c44
   },
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
+        "mobilesdk_app_id": "1:321267110664:android:87330d3adce45b264092bd",
+=======
         "mobilesdk_app_id": "1:121174944945:android:ff14c554424b8ecb11c690",
+>>>>>>> 8516e4564029df97f3fb80608495bc33fa1b5c44
         "android_client_info": {
           "package_name": "com.prak.pet"
         }
@@ -15,7 +25,11 @@
       "oauth_client": [],
       "api_key": [
         {
+<<<<<<< HEAD
+          "current_key": "AIzaSyB6yG40pSdFnaUExakz18Pr8hWmod5Klxo"
+=======
           "current_key": "AIzaSyCZt4kdImcXZVLBu2Og2MzijMHi4mCj92o"
+>>>>>>> 8516e4564029df97f3fb80608495bc33fa1b5c44
         }
       ],
       "services": {
