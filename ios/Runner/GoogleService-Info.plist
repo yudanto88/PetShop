@@ -3,17 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
+<<<<<<< HEAD
+	<string>AIzaSyCtEvE9DyzaHCx6znlezfzsW4SxhTh0HP0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>321267110664</string>
+=======
 	<string>AIzaSyD8tbjRBflMBa_Uq11RC6b_9QMEaEkg6Z8</string>
 	<key>GCM_SENDER_ID</key>
 	<string>121174944945</string>
+>>>>>>> 8516e4564029df97f3fb80608495bc33fa1b5c44
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.prak.pet</string>
 	<key>PROJECT_ID</key>
+<<<<<<< HEAD
+	<string>test-11733</string>
+	<key>STORAGE_BUCKET</key>
+	<string>test-11733.appspot.com</string>
+=======
 	<string>petshop-754cb</string>
 	<key>STORAGE_BUCKET</key>
 	<string>petshop-754cb.appspot.com</string>
+>>>>>>> 8516e4564029df97f3fb80608495bc33fa1b5c44
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +37,10 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
+<<<<<<< HEAD
+	<string>1:321267110664:ios:227e40203596d5ac4092bd</string>
+=======
 	<string>1:121174944945:ios:a9cfc0efbb42483211c690</string>
+>>>>>>> 8516e4564029df97f3fb80608495bc33fa1b5c44
 </dict>
 </plist>

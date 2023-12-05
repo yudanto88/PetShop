@@ -33,12 +33,27 @@ void main() async {
   String? token = await messaging.getToken();
   print("FCM Token:$token");
 
-  runApp(
-    GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Application",
-      initialRoute: AppPages.INITIAL,
-      getPages: AppPages.routes,
-    ),
-  );
+//   runApp(
+//     GetMaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: "Application",
+//       initialRoute: AppPages.INITIAL,
+//       getPages: AppPages.routes,
+//     ),
+//   );
+// }
+  void main() async {
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    runApp(
+      GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: "Application",
+        initialRoute: AppPages.INITIAL,
+        getPages: AppPages.routes,
+      ),
+    );
+  }
 }
